@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="site-header-wrapper">
       <header className="site-header">
-        <h1 className="site-logo">TESLA</h1>
+        <h1 className="site-logo">TESLA test</h1>
         <ul className="global-nav center">
           <li><a href=""><span>Model S</span></a></li>
           <li><a href=""><span>Model 3</span></a></li>
