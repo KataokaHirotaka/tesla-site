@@ -1,0 +1,82 @@
+@import 'header';
+
+.menu-wrapper {
+	width: 0px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow-y: auto;
+	// transform: translateX(200%);
+	transition: .5s;
+}
+.open {
+	// transform: translateX(0%);
+	width: 520px;
+	background-color: #fff;
+	transition: .5s;
+	// @include pc {
+	// 	width: 520px;
+	// }
+
+	.menu-list-title {
+		transition: 2s;
+		color: #000;
+	}
+}
+
+.menu {
+	.close-btn {
+		width: 30px;
+		height: 30px;
+		background-color: transparent;
+		position: absolute;
+		top: 18px;
+		right: 50px;
+		border: none;
+		cursor: pointer;
+		&::before {
+			background-color: transparent;
+			content: '';
+			width: 1.5px;
+			height: 15px;
+			background-color: #000;
+			position: absolute;
+			top: 8px;
+			transform: rotate(45deg);
+		}
+		&:hover {
+			background-color: $hover-color;
+			border-radius: 50%;
+		}
+		span {
+			width: 1.5px;
+			height: 15px;
+			background-color: #000;
+			position: absolute;
+			top: 8px;
+			transform: rotate(-45deg);
+		}
+	}
+	.top {
+		margin-top: 50px;
+	}
+	&-list {
+		padding: 5px 20px;
+		margin: 10px 20px;
+		text-align: left;
+		font-size: 16px;
+		border-radius: 10px;
+		transition: .5s;
+		&:hover {
+			background-color: $hover-color;
+			transition: .5s;
+		}
+	}
+}
+
+.menu-list-title {
+	transition: .2s;
+	color: transparent;
+}

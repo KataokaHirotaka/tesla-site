@@ -1,0 +1,30 @@
+$breakpoints: (
+    sp: 481px,
+    tb: 769px,
+    btb: 1025px,
+    pc: 1026px
+);
+
+@mixin pc {
+    @media only screen and (min-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media only screen and (max-width: mapget($breakpoints, sp)) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media only screen and (min-width: map-get($breakpoints, sp)) and (max-width: map-get($breakpoints, tb)) {
+        @content;
+    }
+}
+
+@mixin btb {
+    @media only screen and (min-width: map-get($breakpoints, tb)) and (max-width: map-get($breakpoints, btb)) {
+        @content;
+    }
+}

@@ -1,3 +1,6 @@
+@import 'mixin';
+$hover-color: rgb(245, 243, 243);
+
 .site-header-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -15,14 +18,42 @@
   justify-content: center;
   align-items: center;
 
-  li {
-    padding: 0 20px;
+  .center-list, #shop, #account {
+    display: none;
+    @include pc {
+      display: block;
+    }
   }
-}
 
-.menu-btn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+  li {
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: transparent;
+    transition-duration: 0.5s;
+  }
 
+  @include pc {
+    li:hover {
+      padding: 5px 15px;
+      background-color: $hover-color;
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+      
+      border-radius: 10px;
+      transition-duration: 0.5s;
+    }
+  }
+
+  .menu-btn {
+    font-size: 16px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    @include pc {
+      background-color: transparent;
+      padding: 0;
+    }
+    
+  }
 }
