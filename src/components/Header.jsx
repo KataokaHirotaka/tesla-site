@@ -9,7 +9,10 @@ const Header = () => {
   return (
     <div className="site-header-wrapper">
       <header className="site-header">
-        <h1 className="site-logo">TESLA test</h1>
+        <Link to="/">
+          <h1 className="site-logo">TESLA test</h1>
+        </Link>
+        
         <ul className="global-nav center">
           <li className="center-list">
             <Link

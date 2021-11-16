@@ -4,6 +4,8 @@ $hover-color: rgb(245, 243, 243);
 .site-header-wrapper {
   width: 100%;
   margin: 0 auto;
+  position: fixed;
+  z-index: 20;
 }
 
 .site-header {

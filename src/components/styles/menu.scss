@@ -3,22 +3,18 @@
 .menu-wrapper {
 	width: 0px;
 	background-color: transparent;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	overflow-y: auto;
-	// transform: translateX(200%);
 	transition: .5s;
+	z-index: 20;
 }
 .open {
-	// transform: translateX(0%);
 	width: 520px;
 	background-color: #fff;
 	transition: .5s;
-	// @include pc {
-	// 	width: 520px;
-	// }
 
 	.menu-list-title {
 		transition: 2s;

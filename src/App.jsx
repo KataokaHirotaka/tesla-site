@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Home } from './components/index';
+import { Header, Home, Button } from './components/index';
 import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -46,6 +46,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}/>
         </Routes>
+        
       </Router>
     </div>
   );
