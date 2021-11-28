@@ -1,6 +1,12 @@
 export {default as Header} from './Header';
 export {default as Menu} from './Menu';
 export {default as Main} from './Main';
-export {default as Home} from './pages/Home';
 export {default as HeroSection} from './HeroSection';
 export {default as Button} from './Button';
+export {default as Home} from './pages/Home';
+export {default as Model3} from './pages/Model3';
+export {default as ModelS} from './pages/ModelS';
+export {default as ModelX} from './pages/ModelX';
+export {default as ModelY} from './pages/ModelY';
+export {default as SolarPanels} from './pages/SolarPanels';
+export {default as SolarRoof} from './pages/SolarRoof';

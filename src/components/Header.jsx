@@ -16,42 +16,42 @@ const Header = () => {
         <ul className="global-nav center">
           <li className="center-list">
             <Link
-              to="/model-s"
+              to="/models"
             >
               <span>Model S</span>
             </Link>
             </li>
           <li className="center-list">
             <Link
-              to="/model-3"
+              to="/model3"
             >
               <span>Model 3</span>
             </Link>
             </li>
           <li className="center-list">
             <Link
-              to="/model-x"
+              to="/modelx"
             >
               <span>Model X</span>
             </Link>
             </li>
           <li className="center-list">
             <Link
-              to="/model-y"
+              to="/modely"
             >
               <span>Model Y</span>
             </Link>
             </li>
           <li className="center-list">
             <Link
-              to="/solar-roof"
+              to="/solarroof"
             >
               <span>Solar Roof</span>
             </Link>
             </li>
           <li className="center-list">
             <Link
-              to="/solar-panels"
+              to="/solarpanels"
             >
               <span>Solar Panels</span>
             </Link>

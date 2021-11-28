@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Home, Button } from './components/index';
+import { Header, Home, Button, ModelS, Model3, ModelX, ModelY, SolarPanels, SolarRoof } from './components/index';
 import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
@@ -43,8 +43,15 @@ function App() {
       <Router>
         <div id="stalker"></div>  
         <Header />
+        
         <Routes>
           <Route exact path="/" element={<Home />}/>
+          <Route exact path="/models" element={<ModelS />}/>
+          <Route exact path="/model3" element={<Model3 />}/>
+          <Route exact path="/modelX" element={<ModelX />}/>
+          <Route exact path="/modelY" element={<ModelY />}/>
+          <Route exact path="/solarroof" element={<SolarRoof />}/>
+          <Route exact path="/solarPanels" element={<SolarPanels />}/>
         </Routes>
         
       </Router>

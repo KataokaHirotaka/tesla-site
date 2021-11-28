@@ -19,6 +19,7 @@ $hover-color: rgb(245, 243, 243);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 
   .center-list, #shop, #account {
     display: none;
@@ -48,6 +49,7 @@ $hover-color: rgb(245, 243, 243);
 
   .menu-btn {
     font-size: 16px;
+    font-weight: bold;
     border: none;
     padding: 5px 15px;
     border-radius: 10px;
